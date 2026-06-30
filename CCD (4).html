@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creamyy Cakes & Desserts | Designer & Premium Cakes, Bhopal</title>
+<meta name="description" content="Designer fondant, photo, and theme cakes made fresh in Bhopal. Eggless options available. Order online or via WhatsApp for same-day delivery.">
+<meta property="og:title" content="Creamyy Cakes & Desserts | Bhopal">
+<meta property="og:description" content="Handcrafted designer cakes for birthdays, weddings, and every celebration — eggless options available, delivered fresh across Bhopal.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23C84C93'/%3E%3Cpath d='M18 38h28v8a4 4 0 01-4 4H22a4 4 0 01-4-4z' fill='%23FDE8F3'/%3E%3Cpath d='M20 38c0-6 5-9 12-9s12 3 12 9' fill='none' stroke='%23FDE8F3' stroke-width='3'/%3E%3Ccircle cx='32' cy='20' r='3' fill='%23E8BE41'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ivory:#FFFDFE;
+    --cream:#FDE8F3;
+    --warm-white:#FEF5F9;
+    --gold:#E8BE41;
+    --gold-dark:#C84C93;
+    --cocoa:#F4A4D4;
+    --espresso:#2A1B22;
+    --muted:#8A6B7A;
+    --rose-deep:#9C3A75;
+    --blush:#FBD4E8;
+    --ff-display:'Fraunces', Georgia, serif;
+    --ff-body:'Plus Jakarta Sans', Arial, sans-serif;
+    --radius:18px;
+    --shadow-soft:0 10px 30px rgba(156,58,117,0.12);
+    /* type rhythm: one tight tracking for big serif display type,
+       one wide tracking for small uppercase labels, one shared easing curve */
+    --tracking-tight:-0.015em;
+    --tracking-label:.14em;
+    --ease-soft:cubic-bezier(.22,.61,.36,1);
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background-color:var(--warm-white);
+    color:var(--espresso);
+    font-family:var(--ff-body);
+    line-height:1.65;
+    font-feature-settings:"tnum" 1;
+    font-variant-numeric:tabular-nums;
+    -webkit-font-smoothing:antialiased;
+  }
+  img,svg{display:block;max-width:100%;}
+  a{color:inherit;}
+  h1,h2,h3{
+    font-family:var(--ff-display);margin:0;line-height:1.12;
+    font-weight:600;letter-spacing:var(--tracking-tight);
+  }
+  p{margin:0;}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 24px;}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:.78rem;letter-spacing:var(--tracking-label);text-transform:uppercase;
+    color:var(--gold-dark);font-weight:700;margin-bottom:14px;
+  }
+  .eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gold);display:inline-block;}
+  section{padding:88px 0;}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    background-color:var(--gold-dark);color:#fff;
+    padding:14px 28px;border-radius:50px;font-weight:600;font-size:.95rem;letter-spacing:.01em;
+    text-decoration:none;border:none;cursor:pointer;
+    transition:background-color .25s ease, transform .25s ease;
+    font-family:var(--ff-body);
+  }
+  .btn:hover{background-color:var(--espresso);transform:translateY(-2px);}
+  .btn.ghost{
+    background-color:transparent;color:var(--espresso);
+    border:1.5px solid var(--espresso);
+  }
+  .btn.ghost:hover{background-color:var(--espresso);color:#fff;}
+
+  /* reveal-on-scroll */
+  .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease, transform .6s ease;}
+  .reveal.in{opacity:1;transform:translateY(0);}
+  @media (prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none;}
+    html{scroll-behavior:auto;}
+  }
+
+  /* ---------- NAV ---------- */
+  .navbar{
+    position:sticky;top:0;z-index:50;
+    background-color:rgba(254,245,249,0.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--blush);
+  }
+  .nav-inner{
+    max-width:1140px;margin:0 auto;padding:14px 24px;
+    display:flex;align-items:center;justify-content:space-between;
+  }
+  .logo{font-family:var(--ff-display);font-weight:700;font-size:1.45rem;letter-spacing:var(--tracking-tight);color:var(--espresso);text-decoration:none;}
+  .logo span{color:var(--gold-dark);}
+  .nav-links{display:flex;align-items:center;gap:32px;list-style:none;margin:0;padding:0;}
+  .nav-links a{text-decoration:none;font-weight:500;font-size:.95rem;color:var(--espresso);position:relative;}
+  .nav-links a::after{
+    content:"";position:absolute;left:0;bottom:-6px;height:2px;width:0;background:var(--gold-dark);
+    transition:width .25s ease;
+  }
+  .nav-links a:hover::after{width:100%;}
+  .nav-cta{display:flex;align-items:center;gap:16px;}
+  .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px;}
+  .hamburger span{width:24px;height:2px;background:var(--espresso);border-radius:2px;}
+
+  /* ---------- HERO ---------- */
+  .hero{padding:72px 0 0;overflow:hidden;}
+  .hero-inner{
+    max-width:1140px;margin:0 auto;padding:0 24px;
+    display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;
+  }
+  .hero-text h1{font-size:clamp(2.4rem,4.6vw,3.6rem);font-weight:600;letter-spacing:var(--tracking-tight);}
+  .hero-text h1 em{font-style:italic;font-weight:500;color:var(--gold-dark);}
+  .hero-text p.lede{margin-top:18px;font-size:1.08rem;line-height:1.7;color:var(--muted);max-width:480px;}
+  .hero-actions{margin-top:30px;display:flex;gap:16px;flex-wrap:wrap;}
+  .hero-stats{display:flex;gap:36px;margin-top:48px;flex-wrap:wrap;}
+  .hero-stats div b{display:block;font-family:var(--ff-display);font-size:1.6rem;letter-spacing:var(--tracking-tight);color:var(--espresso);}
+  .hero-stats div span{font-size:.82rem;color:var(--muted);}
+  .hero-art{position:relative;}
+  .hero-photo{
+    width:100%;max-width:380px;margin:0 auto;height:480px;
+    overflow:hidden;border-radius:160px 160px 28px 28px;
+    box-shadow:0 18px 50px rgba(156,58,117,0.22);
+  }
+  .hero-photo img{width:100%;height:100%;object-fit:cover;display:block;}
+
+  /* ---------- MARQUEE TICKER ---------- */
+  .marquee{
+    background:var(--gold);overflow:hidden;width:100%;padding:16px 0;
+  }
+  .marquee-track{
+    display:flex;align-items:center;gap:28px;width:max-content;
+    animation:marquee-scroll 32s linear infinite;
+  }
+  .marquee-track span.word{
+    font-family:var(--ff-display);font-style:italic;font-weight:500;letter-spacing:var(--tracking-tight);
+    font-size:1.1rem;color:var(--espresso);white-space:nowrap;
+  }
+  .marquee-track span.dot{
+    width:6px;height:6px;border-radius:50%;background:var(--gold-dark);flex-shrink:0;
+  }
+  @keyframes marquee-scroll{
+    from{transform:translateX(0);}
+    to{transform:translateX(-50%);}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .marquee-track{animation:none;}
+  }
+  .photo-frame{
+    position:relative;z-index:1;width:100%;max-width:380px;margin:0 auto;
+    aspect-ratio:1/1;overflow:hidden;box-shadow:var(--shadow-soft);
+    border-radius:42% 58% 63% 37% / 53% 42% 58% 47%;
+  }
+  .photo-frame img{width:100%;height:100%;object-fit:cover;display:block;}
+  .photo-frame--round{
+    max-width:340px;border-radius:50%;
+    box-shadow:0 14px 40px rgba(156,58,117,0.18);
+  }
+  .tile-art img{width:100%;height:100%;object-fit:cover;display:block;}
+
+  /* icing scallop divider */
+  .icing-divider{
+    height:26px;width:100%;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='26' viewBox='0 0 40 26'%3E%3Cpath d='M0,0 C10,26 30,26 40,0 Z' fill='%23FDE8F3'/%3E%3C/svg%3E");
+    background-repeat:repeat-x;background-size:40px 26px;
+  }
+  .icing-divider.alt{
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='26' viewBox='0 0 40 26'%3E%3Cpath d='M0,0 C10,26 30,26 40,0 Z' fill='%23FEF5F9'/%3E%3C/svg%3E");
+  }
+
+  /* ---------- ABOUT ---------- */
+  .about{background:var(--cream);}
+  .about-inner{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+  .about h2,.menu-head h2,.order-info h2{font-size:clamp(1.85rem,2.6vw,2.1rem);font-weight:600;letter-spacing:var(--tracking-tight);}
+  .about p.body-text{margin-top:18px;color:var(--espresso);opacity:.85;max-width:480px;}
+  .stat-row{display:flex;gap:0;margin-top:40px;border-top:1px solid rgba(42,27,34,0.12);padding-top:24px;}
+  .stat-row div{flex:1;}
+  .stat-row div b{display:block;font-family:var(--ff-display);font-size:1.9rem;letter-spacing:var(--tracking-tight);color:var(--gold-dark);}
+  .stat-row div span{font-size:.82rem;color:var(--muted);}
+  .about-art{display:flex;justify-content:center;}
+  .about-art svg{width:100%;max-width:320px;}
+
+  /* ---------- MENU ---------- */
+  .menu-head{text-align:center;max-width:560px;margin:0 auto 56px;}
+  .menu-head p{margin-top:14px;color:var(--muted);}
+  .menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+  .menu-card{
+    background:var(--ivory);border:1px solid var(--blush);border-radius:var(--radius);
+    padding:0 0 26px;box-shadow:var(--shadow-soft);overflow:hidden;position:relative;
+    display:flex;flex-direction:column;
+    transition:transform .25s ease, box-shadow .25s ease;
+  }
+  .menu-card:hover{transform:translateY(-6px);box-shadow:0 16px 36px rgba(156,58,117,0.18);}
+  .card-photo{position:relative;width:100%;height:150px;overflow:hidden;}
+  .card-photo img{width:100%;height:100%;object-fit:cover;transition:transform .45s ease;}
+  .menu-card:hover .card-photo img{transform:scale(1.08);}
+  .card-body{padding:38px 26px 0;display:flex;flex-direction:column;gap:14px;flex:1;}
+  .icon-badge{
+    width:60px;height:60px;border-radius:50%;background:var(--blush);
+    display:flex;align-items:center;justify-content:center;
+    flex-shrink:0;
+  }
+  .icon-badge.float{
+    position:absolute;top:120px;left:26px;z-index:2;
+    border:3px solid var(--ivory);box-shadow:var(--shadow-soft);
+  }
+  .icon-badge svg{width:32px;height:32px;}
+  .menu-card h3{font-size:1.18rem;font-weight:600;letter-spacing:var(--tracking-tight);}
+  .menu-card p.desc{color:var(--muted);font-size:.92rem;line-height:1.55;flex:1;}
+  .menu-card .price-row{display:flex;align-items:center;justify-content:space-between;margin-top:6px;}
+  .menu-card .price{font-family:var(--ff-display);font-weight:600;font-size:1.05rem;color:var(--gold-dark);}
+  .menu-card a.enq{font-size:.85rem;font-weight:600;text-decoration:none;color:var(--espresso);border-bottom:1.5px solid var(--gold);}
+
+  /* ---------- CAKE DETAIL SLIDE-OUT ---------- */
+  .cake-card{position:relative;}
+  .cake-card-front{
+    position:relative;z-index:2;cursor:pointer;
+    /* overrides .menu-card's base transition (same specificity, later in source) to add the slide/fade */
+    transition:transform .45s var(--ease-soft), opacity .4s ease, box-shadow .25s ease;
+  }
+  .cake-card-front:focus-visible{outline:2px solid var(--gold-dark);outline-offset:3px;}
+  .tap-badge{
+    position:absolute;top:12px;right:12px;z-index:2;
+    display:flex;align-items:center;gap:5px;
+    background:rgba(255,253,254,0.92);color:var(--gold-dark);
+    font-size:.68rem;font-weight:600;letter-spacing:.04em;
+    padding:5px 11px;border-radius:50px;box-shadow:0 4px 12px rgba(156,58,117,0.18);
+    pointer-events:none;
+  }
+  .tap-badge svg{width:12px;height:12px;flex-shrink:0;}
+  .cake-card-back{
+    position:absolute;inset:0;
+    background:var(--ivory);border:1px solid var(--blush);border-radius:var(--radius);
+    box-shadow:var(--shadow-soft);
+    padding:26px 24px 22px;
+    display:flex;flex-direction:column;overflow-y:auto;
+    z-index:1;opacity:0;pointer-events:none;
+    transform:translateY(30px) scale(.93);
+    transition:transform .5s var(--ease-soft), opacity .4s ease;
+  }
+  .cake-card.active .cake-card-front{
+    transform:translateY(-22px) scale(.95);
+    opacity:0;pointer-events:none;
+  }
+  .cake-card.active .cake-card-back{
+    z-index:3;opacity:1;pointer-events:auto;
+    transform:translateY(0) scale(1);
+  }
+  .cake-back-close{
+    position:absolute;top:14px;right:14px;width:30px;height:30px;border-radius:50%;
+    border:none;background:var(--blush);color:var(--espresso);font-size:1.15rem;line-height:1;
+    cursor:pointer;display:flex;align-items:center;justify-content:center;
+    transition:background-color .2s ease, color .2s ease;
+  }
+  .cake-back-close:hover{background:var(--gold-dark);color:#fff;}
+  .cake-card-back h3{font-size:1.1rem;font-weight:600;letter-spacing:var(--tracking-tight);padding-right:34px;}
+  .cake-back-desc{margin-top:10px;font-size:.88rem;line-height:1.6;color:var(--espresso);opacity:.85;}
+  .cake-back-meta{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-direction:column;gap:7px;}
+  .cake-back-meta li{font-size:.8rem;line-height:1.5;color:var(--muted);}
+  .cake-back-meta li b{color:var(--espresso);font-weight:600;}
+  .cake-back-actions{
+    margin-top:auto;padding-top:16px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;
+  }
+  .cake-back-actions .price{font-family:var(--ff-display);font-weight:600;color:var(--gold-dark);font-size:1rem;}
+  .cake-back-actions .btn{padding:10px 18px;font-size:.82rem;}
+  @media (prefers-reduced-motion:reduce){
+    .cake-card-front,.cake-card-back{transition:none;}
+  }
+
+  /* ---------- GALLERY ---------- */
+  .gallery{background:var(--blush);}
+  .gallery-grid{column-count:3;column-gap:24px;}
+  .tile{
+    background:var(--ivory);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-soft);
+    break-inside:avoid;margin-bottom:24px;display:inline-block;width:100%;
+  }
+  .tile .scallop-top{
+    height:16px;width:100%;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='16' viewBox='0 0 32 16'%3E%3Cpath d='M0,16 C8,0 24,0 32,16 Z' fill='%23E8BE41'/%3E%3C/svg%3E");
+    background-repeat:repeat-x;background-size:32px 16px;
+  }
+  .tile .tile-art{height:160px;display:flex;align-items:center;justify-content:center;overflow:hidden;cursor:pointer;}
+  .tile .tile-art img{transition:transform .45s ease;}
+  .tile .tile-art:hover img{transform:scale(1.08);}
+  .tile .tile-art svg{width:90px;height:90px;}
+  .tile .tile-label{padding:16px 18px 22px;text-align:center;}
+  .tile .tile-label b{display:block;font-family:var(--ff-display);font-size:1.05rem;letter-spacing:var(--tracking-tight);}
+  .tile .tile-label span{font-size:.82rem;color:var(--muted);}
+  .tile.t1 .tile-art{background:var(--blush);height:220px;}
+  .tile.t2 .tile-art{background:var(--cream);height:300px;}
+  .tile.t3 .tile-art{background:#FBEFD9;height:170px;}
+  .tile.t4 .tile-art{background:var(--blush);height:260px;}
+  .tile.t5 .tile-art{background:var(--cream);height:200px;}
+  .tile.t6 .tile-art{background:#FBEFD9;height:240px;}
+
+  /* ---------- TESTIMONIALS ---------- */
+  .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+  .testi-card{
+    background:var(--ivory);border-radius:var(--radius);padding:30px 26px;
+    border:1px solid var(--blush);
+  }
+  .testi-card .stars{color:var(--gold);font-size:.95rem;letter-spacing:2px;margin-bottom:12px;}
+  .testi-card p.quote{
+    font-family:var(--ff-display);font-style:italic;font-weight:500;
+    font-size:1.08rem;line-height:1.5;color:var(--espresso);opacity:.92;
+  }
+  .testi-card .who{margin-top:18px;display:flex;flex-direction:column;}
+  .testi-card .who b{font-family:var(--ff-display);font-weight:600;font-size:.95rem;letter-spacing:var(--tracking-tight);}
+  .testi-card .who span{font-size:.78rem;color:var(--muted);}
+
+  /* ---------- LIGHTBOX ---------- */
+  .lightbox{
+    position:fixed;inset:0;background:rgba(42,27,34,0.82);z-index:200;
+    display:none;align-items:center;justify-content:center;padding:24px;
+  }
+  .lightbox.open{display:flex;}
+  .lightbox img{max-width:min(680px,90vw);max-height:80vh;border-radius:14px;box-shadow:0 20px 50px rgba(0,0,0,0.4);}
+  .lightbox-close{
+    position:absolute;top:24px;right:28px;width:42px;height:42px;border-radius:50%;
+    background:var(--ivory);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;
+    font-size:1.3rem;color:var(--espresso);
+  }
+
+  /* ---------- BACK TO TOP ---------- */
+  .to-top{
+    position:fixed;bottom:24px;right:24px;width:48px;height:48px;border-radius:50%;
+    background:var(--gold-dark);color:#fff;border:none;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-soft);
+    opacity:0;visibility:hidden;transform:translateY(10px);
+    transition:opacity .25s ease, transform .25s ease, background-color .25s ease;
+    z-index:60;
+  }
+  .to-top.show{opacity:1;visibility:visible;transform:translateY(0);}
+  .to-top:hover{background-color:var(--espresso);}
+  .to-top svg{width:20px;height:20px;}
+
+  /* ---------- FAQ ---------- */
+  .faq{background:var(--blush);}
+  .faq-list{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:14px;}
+  .faq-item{
+    background:var(--ivory);border-radius:14px;border:1px solid var(--cream);overflow:hidden;
+  }
+  .faq-item summary{
+    padding:18px 22px;font-weight:600;font-size:.98rem;cursor:pointer;list-style:none;
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+  }
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary::after{
+    content:"+";font-size:1.4rem;color:var(--gold-dark);flex-shrink:0;line-height:1;
+    transition:transform .25s ease;
+  }
+  .faq-item[open] summary::after{transform:rotate(45deg);}
+  .faq-item p{padding:0 22px 20px;color:var(--muted);font-size:.92rem;}
+
+  /* ---------- ORDER / CONTACT ---------- */
+  .order{background:var(--cream);}
+  .order-inner{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;}
+  .order-info p.body-text{margin-top:14px;color:var(--espresso);opacity:.85;max-width:420px;}
+  .info-list{margin-top:30px;display:flex;flex-direction:column;gap:18px;}
+  .info-list .row{display:flex;gap:14px;align-items:flex-start;}
+  .info-list svg{width:22px;height:22px;flex-shrink:0;margin-top:2px;color:var(--gold-dark);}
+  .info-list b{display:block;font-size:.92rem;}
+  .info-list span{font-size:.86rem;color:var(--muted);}
+  .whatsapp-btn{margin-top:26px;}
+
+  .order-form{
+    background:var(--ivory);border-radius:var(--radius);padding:34px;box-shadow:var(--shadow-soft);
+  }
+  .order-form h3{font-size:1.2rem;font-weight:600;margin-bottom:6px;}
+  .order-form p.hint{font-size:.85rem;color:var(--muted);margin-bottom:22px;}
+  .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .field{display:flex;flex-direction:column;gap:6px;margin-bottom:16px;}
+  .field.full{grid-column:1 / -1;}
+  .field label{font-size:.82rem;font-weight:600;color:var(--espresso);}
+  .field input,.field select,.field textarea{
+    border:1.5px solid var(--blush);border-radius:10px;padding:11px 14px;
+    font-family:var(--ff-body);font-size:.92rem;background:var(--warm-white);color:var(--espresso);
+    outline:none;transition:border-color .2s ease;
+  }
+  .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold-dark);}
+  .field textarea{resize:vertical;min-height:80px;}
+  .form-msg{margin-top:14px;font-size:.88rem;color:var(--rose-deep);font-weight:600;display:none;}
+  .form-msg.show{display:block;}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--espresso);color:var(--warm-white);padding:56px 0 28px;}
+  .footer-inner{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px;}
+  .footer-inner .logo{color:var(--warm-white);}
+  .footer-inner .logo span{color:var(--gold);}
+  .footer-inner p{margin-top:14px;color:#cbb6c0;font-size:.88rem;max-width:280px;}
+  .footer-col h4{font-family:var(--ff-body);font-size:.82rem;font-weight:700;letter-spacing:var(--tracking-label);text-transform:uppercase;margin-bottom:14px;color:var(--gold);}
+  .footer-col ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;}
+  .footer-col ul li a{text-decoration:none;color:#e8d8e0;font-size:.88rem;}
+  .footer-col ul li a:hover{color:var(--gold);}
+  .footer-bottom{
+    margin-top:44px;padding-top:22px;border-top:1px solid rgba(255,255,255,0.12);
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;
+    font-size:.8rem;color:#b89bab;
+  }
+  .social-row{display:flex;gap:14px;}
+  .social-row a{
+    width:34px;height:34px;border-radius:50%;border:1px solid rgba(255,255,255,0.2);
+    display:flex;align-items:center;justify-content:center;text-decoration:none;
+  }
+  .social-row a:hover{background:var(--gold-dark);border-color:var(--gold-dark);}
+  .social-row svg{width:16px;height:16px;color:var(--warm-white);}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width: 900px){
+    .hero-inner,.about-inner,.order-inner{grid-template-columns:1fr;}
+    .hero-art{order:-1;max-width:320px;margin:0 auto;}
+    .menu-grid,.testi-grid{grid-template-columns:repeat(2,1fr);}
+    .gallery-grid{column-count:2;}
+    .footer-inner{grid-template-columns:1fr 1fr;}
+    .footer-inner > div:first-child{grid-column:1 / -1;}
+  }
+  @media (max-width: 680px){
+    .nav-links{
+      position:absolute;top:100%;left:0;right:0;background:var(--ivory);
+      flex-direction:column;align-items:flex-start;padding:20px 24px;gap:18px;
+      border-bottom:1px solid var(--blush);display:none;
+    }
+    .nav-links.open{display:flex;}
+    .hamburger{display:flex;}
+    .nav-cta .btn.ghost{display:none;}
+    .menu-grid,.testi-grid,.form-grid{grid-template-columns:1fr;}
+    .gallery-grid{column-count:1;}
+    section{padding:64px 0;}
+    .stat-row{flex-wrap:wrap;gap:20px;}
+    .stat-row div{flex:1 1 40%;}
+  }
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo">Creamyy Cakes &amp; Desserts<span>.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">Our Story</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#contact" class="btn ghost">Order Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="hero-inner">
+    <div class="hero-text reveal">
+      <span class="eyebrow">Designer &amp; Premium Cakes, Bhopal</span>
+      <h1>Cakes baked for the <em>moment</em> you'll remember</h1>
+      <p class="lede">Handcrafted fondant, photo, and theme cakes — eggless options available — delivered fresh across Bhopal for birthdays, weddings, and every celebration in between.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn">Explore the Menu</a>
+        <a href="#contact" class="btn ghost">Order a Custom Cake</a>
+      </div>
+      <div class="hero-stats">
+        <div><b><span class="count" data-target="500">0</span>+</b><span>Cakes Crafted</span></div>
+        <div><b><span class="count" data-target="10">0</span>+</b><span>Years Baking</span></div>
+        <div><b>4.9★</b><span>Customer Rating</span></div>
+      </div>
+    </div>
+    <div class="hero-art reveal">
+      <div class="hero-photo">
+        <img src="https://images.unsplash.com/photo-1525257831700-183b9b8bf5c4?auto=format&fit=crop&w=900&q=80" alt="Elegant white floral tiered fondant cake" loading="lazy">
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="marquee">
+  <div class="marquee-track" id="marqueeTrack">
+    <span class="word">Designer Fondant</span><span class="dot"></span>
+    <span class="word">Eggless Available</span><span class="dot"></span>
+    <span class="word">Same-Day Delivery</span><span class="dot"></span>
+    <span class="word">Photo Cakes</span><span class="dot"></span>
+    <span class="word">Wedding Tiers</span><span class="dot"></span>
+    <span class="word">Made Fresh Daily</span><span class="dot"></span>
+    <span class="word">Designer Fondant</span><span class="dot"></span>
+    <span class="word">Eggless Available</span><span class="dot"></span>
+    <span class="word">Same-Day Delivery</span><span class="dot"></span>
+    <span class="word">Photo Cakes</span><span class="dot"></span>
+    <span class="word">Wedding Tiers</span><span class="dot"></span>
+    <span class="word">Made Fresh Daily</span><span class="dot"></span>
+  </div>
+</div>
+
+<div class="icing-divider"></div>
+
+<section class="about" id="about">
+  <div class="wrap about-inner">
+    <div class="reveal">
+      <span class="eyebrow">Our Story</span>
+      <h2>Every cake starts with a reason to celebrate</h2>
+      <p class="body-text">Creamyy Cakes &amp; Desserts began as a home kitchen experiment and grew into Bhopal's go-to bakery for cakes that taste as good as they look. We hand-pipe every order, balance sweetness so it never overwhelms, and keep eggless versions of nearly everything on the menu — because a celebration shouldn't leave anyone out.</p>
+      <div class="stat-row">
+        <div><b><span class="count" data-target="10000">0</span>+</b><span>Happy Families</span></div>
+        <div><b><span class="count" data-target="30">0</span>+</b><span>Flavours</span></div>
+        <div><b>Same-Day</b><span>Delivery Available</span></div>
+      </div>
+    </div>
+    <div class="about-art reveal">
+      <div class="photo-frame photo-frame--round">
+        <img src="https://images.unsplash.com/photo-1566802596043-d990c488bc63?auto=format&fit=crop&w=800&q=80" alt="Round pink rose-topped celebration cake" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="icing-divider alt"></div>
+
+<section class="menu" id="menu">
+  <div class="wrap">
+    <div class="menu-head reveal">
+      <span class="eyebrow">From Our Kitchen</span>
+      <h2>Something sweet for every occasion</h2>
+      <p>Browse our most-loved categories — every cake is made fresh to order and customised to your theme, flavour, and headcount.</p>
+    </div>
+
+    <div class="menu-grid">
+      <div class="cake-card reveal">
+        <div class="menu-card cake-card-front" role="button" tabindex="0" aria-expanded="false">
+          <div class="card-photo">
+            <img src="https://images.unsplash.com/photo-1557308536-ee471ef2c390?auto=format&fit=crop&w=500&q=80" alt="Pink fondant cake with rose flowers" loading="lazy">
+          </div>
+          <span class="tap-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>Tap for details</span>
+          <div class="icon-badge float">
+            <svg viewBox="0 0 64 64" fill="none"><rect x="14" y="36" width="36" height="16" rx="4" fill="#F4A4D4" stroke="#2A1B22" stroke-width="2.5"/><rect x="18" y="22" width="28" height="14" rx="4" fill="#FBD4E8" stroke="#2A1B22" stroke-width="2.5"/><path d="M14 40 Q32 32 50 40" stroke="#E8BE41" stroke-width="3" fill="none" stroke-linecap="round"/><circle cx="32" cy="16" r="3" fill="#C84C93"/></svg>
+          </div>
+          <div class="card-body">
+            <h3>Designer Fondant Cakes</h3>
+            <p class="desc">Multi-tier fondant artistry, hand-sculpted toppers, and custom themes built around your idea.</p>
+            <div class="price-row"><span class="price">From ₹999</span><a href="#contact" class="enq">Enquire →</a></div>
+          </div>
+        </div>
+        <div class="cake-card-back">
+          <button class="cake-back-close" aria-label="Close details">&times;</button>
+          <h3>Designer Fondant Cakes</h3>
+          <p class="cake-back-desc">Multi-tier cakes finished in smooth fondant with hand-sculpted toppers and sugar flowers, built around whatever theme or colour story you have in mind.</p>
+          <ul class="cake-back-meta">
+            <li><b>Sponge:</b> Vanilla, chocolate, or red velvet — eggless on request</li>
+            <li><b>Serves:</b> 15–60+ depending on tiers</li>
+            <li><b>Lead time:</b> 3–4 days for multi-tier designs</li>
+          </ul>
+          <div class="cake-back-actions">
+            <span class="price">From ₹999</span>
+            <a href="https://wa.me/9198XXXXXXXX?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20a%20Designer%20Fondant%20Cake." class="btn">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cake-card reveal">
+        <div class="menu-card cake-card-front" role="button" tabindex="0" aria-expanded="false">
+          <div class="card-photo">
+            <img src="https://images.unsplash.com/photo-1694043325785-d841a964257f?auto=format&fit=crop&w=500&q=80" alt="Pink tiered birthday cake with candles" loading="lazy">
+          </div>
+          <span class="tap-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>Tap for details</span>
+          <div class="icon-badge float">
+            <svg viewBox="0 0 64 64" fill="none"><path d="M18 30 L46 30 L42 50 Q32 54 22 50 Z" fill="#FDE8F3" stroke="#2A1B22" stroke-width="2.5"/><path d="M16 30 C16 20 24 16 32 16 C40 16 48 20 48 30 Z" fill="#F4A4D4" stroke="#2A1B22" stroke-width="2.5"/><circle cx="32" cy="13" r="3" fill="#C84C93"/></svg>
+          </div>
+          <div class="card-body">
+            <h3>Birthday &amp; Theme Cakes</h3>
+            <p class="desc">Cartoon, number, and milestone cakes in bold colours — picked from a theme board or fully custom.</p>
+            <div class="price-row"><span class="price">From ₹699</span><a href="#contact" class="enq">Enquire →</a></div>
+          </div>
+        </div>
+        <div class="cake-card-back">
+          <button class="cake-back-close" aria-label="Close details">&times;</button>
+          <h3>Birthday &amp; Theme Cakes</h3>
+          <p class="cake-back-desc">Cartoon, number, and milestone cakes finished in bold buttercream or fondant — pick a design from our theme board or send your own idea.</p>
+          <ul class="cake-back-meta">
+            <li><b>Sponge:</b> Vanilla or chocolate, eggless available</li>
+            <li><b>Serves:</b> 10–25</li>
+            <li><b>Lead time:</b> Same-day possible if ordered before noon</li>
+          </ul>
+          <div class="cake-back-actions">
+            <span class="price">From ₹699</span>
+            <a href="https://wa.me/9198XXXXXXXX?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20a%20Birthday%20%2F%20Theme%20Cake." class="btn">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cake-card reveal">
+        <div class="menu-card cake-card-front" role="button" tabindex="0" aria-expanded="false">
+          <div class="card-photo">
+            <img src="https://images.unsplash.com/photo-1566802596043-d990c488bc63?auto=format&fit=crop&w=500&q=80" alt="Round rose-topped cake ready for personalising" loading="lazy">
+          </div>
+          <span class="tap-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>Tap for details</span>
+          <div class="icon-badge float">
+            <svg viewBox="0 0 64 64" fill="none"><rect x="12" y="18" width="40" height="30" rx="4" fill="#FBD4E8" stroke="#2A1B22" stroke-width="2.5"/><circle cx="32" cy="33" r="9" fill="#FFFDFE" stroke="#2A1B22" stroke-width="2.5"/><circle cx="32" cy="33" r="4" fill="#C84C93"/><rect x="20" y="12" width="8" height="6" rx="2" fill="#E8BE41"/></svg>
+          </div>
+          <div class="card-body">
+            <h3>Photo Cakes</h3>
+            <p class="desc">Edible-print photo cakes for anniversaries, retirements, and reunions — sharp print, soft sponge.</p>
+            <div class="price-row"><span class="price">From ₹799</span><a href="#contact" class="enq">Enquire →</a></div>
+          </div>
+        </div>
+        <div class="cake-card-back">
+          <button class="cake-back-close" aria-label="Close details">&times;</button>
+          <h3>Photo Cakes</h3>
+          <p class="cake-back-desc">Edible-print photo cakes for anniversaries, retirements, and reunions — a sharp, true-colour print over a soft, moist sponge.</p>
+          <ul class="cake-back-meta">
+            <li><b>Sponge:</b> Vanilla, chocolate, or butterscotch</li>
+            <li><b>Serves:</b> 8–20</li>
+            <li><b>Lead time:</b> 1 day's notice recommended for print accuracy</li>
+          </ul>
+          <div class="cake-back-actions">
+            <span class="price">From ₹799</span>
+            <a href="https://wa.me/9198XXXXXXXX?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20a%20Photo%20Cake." class="btn">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cake-card reveal">
+        <div class="menu-card cake-card-front" role="button" tabindex="0" aria-expanded="false">
+          <div class="card-photo">
+            <img src="https://images.unsplash.com/photo-1612950365766-9da51afd2b1b?auto=format&fit=crop&w=500&q=80" alt="Pink and white cupcakes on a display counter" loading="lazy">
+          </div>
+          <span class="tap-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>Tap for details</span>
+          <div class="icon-badge float">
+            <svg viewBox="0 0 64 64" fill="none"><path d="M22 26 C22 20 30 18 32 14 C34 18 42 20 42 26 C42 32 38 36 32 36 C26 36 22 32 22 26 Z" fill="#F4A4D4" stroke="#2A1B22" stroke-width="2.5"/><path d="M18 30 L46 30 L43 46 Q32 50 21 46 Z" fill="#FDE8F3" stroke="#2A1B22" stroke-width="2.5"/></svg>
+          </div>
+          <div class="card-body">
+            <h3>Cupcakes &amp; Cookies</h3>
+            <p class="desc">Boxed assortments for office parties, return gifts, and small get-togethers.</p>
+            <div class="price-row"><span class="price">From ₹249/box</span><a href="#contact" class="enq">Enquire →</a></div>
+          </div>
+        </div>
+        <div class="cake-card-back">
+          <button class="cake-back-close" aria-label="Close details">&times;</button>
+          <h3>Cupcakes &amp; Cookies</h3>
+          <p class="cake-back-desc">Boxed assortments of mini cupcakes and decorated cookies, perfect for office parties, return gifts, and small get-togethers.</p>
+          <ul class="cake-back-meta">
+            <li><b>Box sizes:</b> 6, 12, or 24 pieces</li>
+            <li><b>Flavours:</b> Mixed seasonal selection, or pick your own</li>
+            <li><b>Lead time:</b> Same-day for standard boxes</li>
+          </ul>
+          <div class="cake-back-actions">
+            <span class="price">From ₹249/box</span>
+            <a href="https://wa.me/9198XXXXXXXX?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20Cupcakes%20%26%20Cookies." class="btn">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cake-card reveal">
+        <div class="menu-card cake-card-front" role="button" tabindex="0" aria-expanded="false">
+          <div class="card-photo">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=500&q=80" alt="Rich chocolate cake with flowers" loading="lazy">
+          </div>
+          <span class="tap-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>Tap for details</span>
+          <div class="icon-badge float">
+            <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="18" fill="#FBEFD9" stroke="#2A1B22" stroke-width="2.5"/><path d="M22 32 C22 26 26 22 32 22 C38 22 42 26 42 32" stroke="#C84C93" stroke-width="2.5" fill="none"/><circle cx="26" cy="38" r="2.5" fill="#C84C93"/><circle cx="34" cy="40" r="2.5" fill="#E8BE41"/><circle cx="40" cy="34" r="2.5" fill="#C84C93"/></svg>
+          </div>
+          <div class="card-body">
+            <h3>Pastries &amp; Bites</h3>
+            <p class="desc">Pineapple, chocolate truffle, and seasonal fruit pastries — sold by the piece or the box.</p>
+            <div class="price-row"><span class="price">From ₹89/pc</span><a href="#contact" class="enq">Enquire →</a></div>
+          </div>
+        </div>
+        <div class="cake-card-back">
+          <button class="cake-back-close" aria-label="Close details">&times;</button>
+          <h3>Pastries &amp; Bites</h3>
+          <p class="cake-back-desc">Pineapple, chocolate truffle, and seasonal fruit pastries, made fresh daily and sold individually or by the box.</p>
+          <ul class="cake-back-meta">
+            <li><b>Flavours:</b> 6+ rotating daily</li>
+            <li><b>Sold as:</b> Single pieces or boxes of 6/12</li>
+            <li><b>Lead time:</b> Walk-in or same-day</li>
+          </ul>
+          <div class="cake-back-actions">
+            <span class="price">From ₹89/pc</span>
+            <a href="https://wa.me/9198XXXXXXXX?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20Pastries%20%26%20Bites." class="btn">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cake-card reveal">
+        <div class="menu-card cake-card-front" role="button" tabindex="0" aria-expanded="false">
+          <div class="card-photo">
+            <img src="https://images.unsplash.com/photo-1519654793190-2e8a4806f1f2?auto=format&fit=crop&w=500&q=80" alt="Three-tier wedding cake with flower accents" loading="lazy">
+          </div>
+          <span class="tap-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>Tap for details</span>
+          <div class="icon-badge float">
+            <svg viewBox="0 0 64 64" fill="none"><path d="M32 22 C28 14 16 16 16 26 C16 36 32 46 32 46 C32 46 48 36 48 26 C48 16 36 14 32 22 Z" fill="#F4A4D4" stroke="#2A1B22" stroke-width="2.5"/></svg>
+          </div>
+          <div class="card-body">
+            <h3>Wedding &amp; Anniversary</h3>
+            <p class="desc">Tiered centrepiece cakes designed around your décor, palette, and guest count.</p>
+            <div class="price-row"><span class="price">Custom Quote</span><a href="#contact" class="enq">Enquire →</a></div>
+          </div>
+        </div>
+        <div class="cake-card-back">
+          <button class="cake-back-close" aria-label="Close details">&times;</button>
+          <h3>Wedding &amp; Anniversary</h3>
+          <p class="cake-back-desc">Tiered centrepiece cakes designed around your décor, palette, and guest count — from intimate two-tier setups to full wedding showpieces.</p>
+          <ul class="cake-back-meta">
+            <li><b>Sponge:</b> Any flavour, mixed across tiers</li>
+            <li><b>Serves:</b> 30–200+</li>
+            <li><b>Lead time:</b> 5–7 days, tasting session available</li>
+          </ul>
+          <div class="cake-back-actions">
+            <span class="price">Custom Quote</span>
+            <a href="https://wa.me/9198XXXXXXXX?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20a%20Wedding%20%2F%20Anniversary%20Cake." class="btn">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="icing-divider"></div>
+
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="menu-head reveal">
+      <span class="eyebrow">Style Gallery</span>
+      <h2>Pick a style, we'll make it yours</h2>
+      <p>A look at the finishes our customers ask for most — every style can be remixed with your own colours and flavour.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="tile t1 reveal">
+        <div class="scallop-top"></div>
+        <div class="tile-art" onclick="openLightbox(this.querySelector('img'))"><img src="https://images.unsplash.com/photo-1525257831700-183b9b8bf5c4?auto=format&fit=crop&w=600&q=80" data-full="https://images.unsplash.com/photo-1525257831700-183b9b8bf5c4?auto=format&fit=crop&w=1400&q=80" alt="White tiered fondant cake" loading="lazy"></div>
+        <div class="tile-label"><b>Fondant Finish</b><span>Smooth, sculpted, sharp edges</span></div>
+      </div>
+      <div class="tile t2 reveal">
+        <div class="scallop-top"></div>
+        <div class="tile-art" onclick="openLightbox(this.querySelector('img'))"><img src="https://images.unsplash.com/photo-1557308536-ee471ef2c390?auto=format&fit=crop&w=600&q=80" data-full="https://images.unsplash.com/photo-1557308536-ee471ef2c390?auto=format&fit=crop&w=1400&q=80" alt="Pink fondant cake with rose flowers" loading="lazy"></div>
+        <div class="tile-label"><b>Floral Theme</b><span>Buttercream blooms, soft palette</span></div>
+      </div>
+      <div class="tile t3 reveal">
+        <div class="scallop-top"></div>
+        <div class="tile-art" onclick="openLightbox(this.querySelector('img'))"><img src="https://images.unsplash.com/photo-1694043325785-d841a964257f?auto=format&fit=crop&w=600&q=80" data-full="https://images.unsplash.com/photo-1694043325785-d841a964257f?auto=format&fit=crop&w=1400&q=80" alt="Pink tiered cake with candles" loading="lazy"></div>
+        <div class="tile-label"><b>Birthday Celebration</b><span>Milestone tiers, bold colour</span></div>
+      </div>
+      <div class="tile t4 reveal">
+        <div class="scallop-top"></div>
+        <div class="tile-art" onclick="openLightbox(this.querySelector('img'))"><img src="https://images.unsplash.com/photo-1612950365766-9da51afd2b1b?auto=format&fit=crop&w=600&q=80" data-full="https://images.unsplash.com/photo-1612950365766-9da51afd2b1b?auto=format&fit=crop&w=1400&q=80" alt="Pink and white cupcakes on a display counter" loading="lazy"></div>
+        <div class="tile-label"><b>Cupcake Counter</b><span>Boxed assortments, fresh daily</span></div>
+      </div>
+      <div class="tile t5 reveal">
+        <div class="scallop-top"></div>
+        <div class="tile-art" onclick="openLightbox(this.querySelector('img'))"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80" data-full="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1400&q=80" alt="Chocolate cake with flowers" loading="lazy"></div>
+        <div class="tile-label"><b>Chocolate Indulgence</b><span>Rich sponge, deep cocoa</span></div>
+      </div>
+      <div class="tile t6 reveal">
+        <div class="scallop-top"></div>
+        <div class="tile-art" onclick="openLightbox(this.querySelector('img'))"><img src="https://images.unsplash.com/photo-1587271672455-a306f63dfcd7?auto=format&fit=crop&w=600&q=80" data-full="https://images.unsplash.com/photo-1587271672455-a306f63dfcd7?auto=format&fit=crop&w=1400&q=80" alt="Mini cake served in a glass jar" loading="lazy"></div>
+        <div class="tile-label"><b>Mini Jar Cakes</b><span>Single-serve, party favours</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="icing-divider alt"></div>
+
+<section class="testimonials" id="testimonials">
+  <div class="wrap">
+    <div class="menu-head reveal">
+      <span class="eyebrow">Customer Love</span>
+      <h2>Straight from our regulars</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+        <div class="stars">★★★★★</div>
+        <p class="quote">Ordered an eggless photo cake for my mother's birthday with barely a day's notice. It arrived on time and the print was crystal clear.</p>
+        <div class="who"><b>Priya Sharma</b><span>Arera Colony, Bhopal</span></div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="stars">★★★★★</div>
+        <p class="quote">The number cake for my son's first birthday was exactly what I'd imagined, maybe better. Texture was light, not too sweet.</p>
+        <div class="who"><b>Rohit Verma</b><span>New Market, Bhopal</span></div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="stars">★★★★★</div>
+        <p class="quote">We've ordered our anniversary cake from Creamyy Cakes &amp; Desserts three years running now. Same care, same consistency every single time.</p>
+        <div class="who"><b>Anjali &amp; Karan</b><span>MP Nagar, Bhopal</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="icing-divider"></div>
+
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="menu-head reveal">
+      <span class="eyebrow">Good to Know</span>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item reveal" open>
+        <summary>How much advance notice do you need?</summary>
+        <p>Simple designs can often be done same-day if ordered before noon. Multi-tier fondant, wedding, and large bulk orders need at least 3–4 days' notice so we can plan the bake and design properly.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Do you make eggless cakes?</summary>
+        <p>Yes — nearly every cake on our menu has an eggless version with no change in taste or texture. Just mention it when you place your enquiry.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Which areas in Bhopal do you deliver to?</summary>
+        <p>We deliver across most of Bhopal including MP Nagar, Arera Colony, New Market, and surrounding areas. For locations further out, let us know and we'll confirm feasibility and charges.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Can I bring my own design or photo reference?</summary>
+        <p>Of course. Share a reference photo, Pinterest board, or even a rough sketch over WhatsApp and we'll quote based on size, tiers, and detailing involved.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary>How do I pay?</summary>
+        <p>We accept UPI, cards, and cash on pickup or delivery. For large or custom orders, a small advance secures your date.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<div class="icing-divider alt"></div>
+
+<section class="order" id="contact">
+  <div class="wrap order-inner">
+    <div class="order-info reveal">
+      <span class="eyebrow">Order or Visit</span>
+      <h2>Let's bake something for your day</h2>
+      <p class="body-text">Tell us the occasion, flavour, and date — we'll confirm pricing and pickup or delivery within a few hours.</p>
+      <div class="info-list">
+        <div class="row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 1118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div><b>Visit the Bakery</b><span>Shop 12, MP Nagar Zone 2, Bhopal, Madhya Pradesh</span></div>
+        </div>
+        <div class="row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.06 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.69 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.33 1.85.56 2.81.69A2 2 0 0122 16.92z"/></svg>
+          <div><b>Call or WhatsApp</b><span>+91 98XXX XXXXX</span></div>
+        </div>
+        <div class="row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          <div><b>Bakery Hours</b><span>10:00 AM – 9:00 PM, Tuesday to Sunday</span></div>
+        </div>
+      </div>
+      <a href="https://wa.me/9198XXXXXXXX" class="btn whatsapp-btn">Order on WhatsApp</a>
+    </div>
+
+    <form class="order-form reveal" id="orderForm">
+      <h3>Send an Enquiry</h3>
+      <p class="hint">Fill this in and we'll call you back to confirm details.</p>
+      <div class="form-grid">
+        <div class="field">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" required placeholder="Your name">
+        </div>
+        <div class="field">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" required placeholder="10-digit mobile">
+        </div>
+        <div class="field">
+          <label for="occasion">Occasion</label>
+          <select id="occasion">
+            <option>Birthday</option>
+            <option>Anniversary</option>
+            <option>Wedding</option>
+            <option>Office / Bulk Order</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="date">Delivery Date</label>
+          <input type="date" id="date">
+        </div>
+        <div class="field full">
+          <label for="message">Cake Details</label>
+          <textarea id="message" placeholder="Flavour, size, theme, eggless or with egg..."></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn" style="width:100%;">Send Enquiry</button>
+      <p class="form-msg" id="formMsg">Thanks! We've received your enquiry and will call you back shortly.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div>
+      <a href="#home" class="logo">Creamyy Cakes &amp; Desserts<span>.</span></a>
+      <p>Designer and premium cakes made fresh in Bhopal — fondant, photo, and theme cakes for every celebration, with eggless options on most of the menu.</p>
+      <div class="social-row" style="margin-top:20px;">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+        <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 11-3.8-7.07L21 3l-1.2 4.2A8.46 8.46 0 0121 11.5z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="#about">Our Story</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Get in Touch</h4>
+      <ul>
+        <li><a href="#contact">Order Now</a></li>
+        <li><a href="https://wa.me/9198XXXXXXXX">WhatsApp Us</a></li>
+        <li><a href="tel:+9198XXXXXXXX">+91 98XXX XXXXX</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>&copy; <span id="year"></span> Creamyy Cakes &amp; Desserts. All rights reserved.</span>
+    <span>Made fresh, daily, in Bhopal.</span>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <img id="lightboxImg" src="" alt="Enlarged cake photo">
+</div>
+
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script>
+  // mobile nav toggle
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+  // scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    revealEls.forEach(el => io.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('in'));
+  }
+
+  // footer year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // lightbox
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+  function openLightbox(imgEl) {
+    lightboxImg.src = imgEl.dataset.full || imgEl.src;
+    lightboxImg.alt = imgEl.alt;
+    lightbox.classList.add('open');
+  }
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    lightboxImg.src = '';
+  }
+  document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+
+  // back to top
+  const toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', () => {
+    toTop.classList.toggle('show', window.scrollY > 500);
+  });
+  toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  // animated stat counters
+  const counters = document.querySelectorAll('.count');
+  const animateCount = (el) => {
+    const target = parseInt(el.dataset.target, 10);
+    const duration = 1200;
+    const start = performance.now();
+    function tick(now) {
+      const progress = Math.min((now - start) / duration, 1);
+      const value = Math.floor(progress * target);
+      el.textContent = value.toLocaleString('en-IN');
+      if (progress < 1) requestAnimationFrame(tick);
+      else el.textContent = target.toLocaleString('en-IN');
+    }
+    requestAnimationFrame(tick);
+  };
+  if ('IntersectionObserver' in window) {
+    const countIo = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCount(entry.target);
+          countIo.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.4 });
+    counters.forEach(el => countIo.observe(el));
+  } else {
+    counters.forEach(el => { el.textContent = el.dataset.target; });
+  }
+
+  // form (front-end only demo)
+  const form = document.getElementById('orderForm');
+  const formMsg = document.getElementById('formMsg');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    formMsg.classList.add('show');
+    form.reset();
+  });
+
+  // cake card tap-to-reveal: description card slides out from behind the cake card
+  document.querySelectorAll('.cake-card').forEach((card) => {
+    const front = card.querySelector('.cake-card-front');
+    const closeBtn = card.querySelector('.cake-back-close');
+    const enqLink = front.querySelector('a.enq');
+
+    const openCard = () => {
+      document.querySelectorAll('.cake-card.active').forEach((other) => {
+        if (other !== card) {
+          other.classList.remove('active');
+          other.querySelector('.cake-card-front').setAttribute('aria-expanded', 'false');
+        }
+      });
+      card.classList.add('active');
+      front.setAttribute('aria-expanded', 'true');
+    };
+    const closeCard = () => {
+      card.classList.remove('active');
+      front.setAttribute('aria-expanded', 'false');
+    };
+
+    front.addEventListener('click', (e) => {
+      if (enqLink && enqLink.contains(e.target)) return; // let the "Enquire" link jump to the form as normal
+      card.classList.contains('active') ? closeCard() : openCard();
+    });
+    front.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        card.classList.contains('active') ? closeCard() : openCard();
+      }
+    });
+    if (closeBtn) {
+      closeBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        closeCard();
+      });
+    }
+  });
+  document.addEventListener('click', (e) => {
+    document.querySelectorAll('.cake-card.active').forEach((card) => {
+      if (!card.contains(e.target)) {
+        card.classList.remove('active');
+        card.querySelector('.cake-card-front').setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
+
+</script>
+
+</body>
+</html>
